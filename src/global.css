@@ -1,5 +1,6 @@
 :root {
   --bg: #121212;
+  --black: #121212;
   --feat: #FF3E00;
   --white: #fff;
 }
@@ -47,6 +48,12 @@
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+  }
+
   /*
     8. Create a root stacking context
   */
@@ -56,14 +63,27 @@
 
   h1, h2, h3 {
     font-family: 'Roboto Condensed Variable', sans-serif;
+    line-height: 1.2;
   }
 
   h1 {
     font-size: 2rem;
+  
   }
 
   /* Classes */
 .wrap {
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 20px;
+}
+.btn {
+  color: var(--white);
+  border: 1px solid var(--white);
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: 250ms;
+}
+.btn:hover {
+  background-color: var(--white);
+  color: var(--black);
 }
