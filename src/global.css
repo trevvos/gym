@@ -24,6 +24,8 @@
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     font-family: 'Cabin', sans-serif;
+    background-color: var(--bg);
+    color: var(--white)
     
   }
   /*
@@ -56,3 +58,12 @@
     font-family: 'Roboto Condensed Variable', sans-serif;
   }
 
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* Classes */
+.wrap {
+  margin: 0 auto;
+  padding: 0 40px;
+}
