@@ -6,7 +6,7 @@
 
     export let title;
     export let content;
-    export let btn;
+    export let btn = "Saiba mais";
     export let href;
 
     export let img;
@@ -21,7 +21,10 @@
     <div class="intro__wrapper wrap">
         <h1> {@html title} <img src="{icon}" alt="" /></h1>
         {content}
-        <a class="btn" href="{href}">{btn}</a>
+
+        {#if btn && href}
+            <a class="btn" href="{href}">{btn}</a>
+        {/if}
     </div>
 </section>
 
