@@ -1,10 +1,11 @@
 <script>
-    import imgHome from '../assets/musculacao.avif'
+    import imgHome from '$lib/assets/musculacao.avif'
+    import icon from '$lib/assets/icon-muscle.png'
 </script>
 
 <section class="intro" style="background-image: url({imgHome});">
     <div class="intro__wrapper wrap">
-        <h1> Você está pronto <br /> para o desafio ?</h1>
+        <h1> Você está pronto <br /> para o desafio ? <img src="{icon}" alt="emoji de musculação" /></h1>
         <p>A Academia Local está pronta para te ajudar a chagar mais longe e alcançar sua melhor performance.</p>
         <a class="btn" href="/sobre">Sobre</a>
     </div>
@@ -27,7 +28,7 @@
         inset: 0;
         background-color: rgba(0, 0, 0, 0.55);
     }
-    
+
     .intro__wrapper {
         z-index: 1;
         max-width: 450px;
@@ -40,5 +41,10 @@
     p {
         font-size: calc(18 / 16 * 1rem);
         margin-top: 16px;
+    }
+
+    img {
+        display: inline;
+        max-width: 36px;
     }
 </style>

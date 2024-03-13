@@ -64,6 +64,7 @@
   h1, h2, h3 {
     font-family: 'Roboto Condensed Variable', sans-serif;
     line-height: 1.2;
+    font-weight: normal;
   }
 
   h1 {
