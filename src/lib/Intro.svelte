@@ -47,7 +47,7 @@
         content: '';
         position: absolute;
         inset: 0;
-        background-color: rgba(0, 0, 0, 0.55);
+        background-color: var(--overlay);
     }
 
     .intro__wrapper {
