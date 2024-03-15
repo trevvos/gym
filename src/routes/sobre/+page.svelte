@@ -1,4 +1,5 @@
 <script>
+	import Info from "$lib/Info.svelte";
 	import Intro from "$lib/Intro.svelte";
 
 </script>   
@@ -11,3 +12,21 @@
     btn="Modalidades"
     href="/modalidades"
 />
+
+<section class="faq">
+    <div class="faq__wrapper wrap">
+        <Info 
+            question="Quanto custa a mensalidade ?"
+            answer="Lorem Ipsum is simply dummy text of the printing and typesetting 
+            industry. Lorem Ipsum has been the industry's standard dummy text ever since 
+            the 1500s, when an unknown printer took a galley of type and scrambled it to make 
+            a type specimen book."
+        />
+    </div>
+</section>
+
+<style>
+    .faq {
+        margin-top: 60px;
+    }
+</style>
