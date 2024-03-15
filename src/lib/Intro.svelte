@@ -24,7 +24,7 @@
 <section class="intro" style="background-image: url({img});">
     <div class="intro__wrapper wrap">
         <h1> {@html title} <img src="{icon}" alt="" /></h1>
-        {content}
+       <p> {content} </p>
 
         {#if btn && href}
             <a class="btn" href="{href}">{btn}</a>
