@@ -32,6 +32,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource-variable/cabin": "^5.0.18",
-		"@fontsource-variable/roboto-condensed": "^5.0.2"
+		"@fontsource-variable/roboto-condensed": "^5.0.2",
+		"@formkit/auto-animate": "^0.8.1"
 	}
 }
