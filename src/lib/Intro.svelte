@@ -4,6 +4,7 @@
     import imgMusculacao from '$lib/assets/musculacao.avif'
     import iconMuscle from '$lib/assets/icon-muscle.png'
     import imgExercicios from '$lib/assets/exercicios.avif'
+    import imgAlongamento from '$lib/assets/alongamento.avif'
     import iconWeight from '$lib/assets/icon-weight.png'
 
     export let title;
@@ -14,6 +15,7 @@
     export let img = 'musculacao';
     if (img === 'musculacao') img = imgMusculacao;
     if (img === 'exercicios') img = imgExercicios;
+    if (img === 'alongamento') img = imgAlongamento;
 
     export let icon;
     if (icon === 'muscle') icon = iconMuscle;
