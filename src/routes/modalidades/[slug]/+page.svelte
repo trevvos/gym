@@ -5,6 +5,8 @@
 	import IntroSingle from '$lib/IntroSingle.svelte';
     import { modalidades } from '$lib/stores'
 
+    import autoAnimate from '@formkit/auto-animate';
+
     //let modalidade = $page.params.slug;
 
     //let data = $modalidades.find(element => element.slug === modalidade)
@@ -18,9 +20,11 @@
 <section class="related">
     <div class="related__wrapper wrap">
         <h3>Outras modalidades:</h3>
-        <div class="list">
+        <div class="list" use:autoAnimate>
             {#each $modalidades as info}
+                {#if info.slug !== $page.params.slug}
                 <Card info={info} />
+                {/if}
             {/each}
         </div>
     </div>
