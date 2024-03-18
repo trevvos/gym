@@ -5,9 +5,10 @@
 	import IntroSingle from '$lib/IntroSingle.svelte';
     import { modalidades } from '$lib/stores'
 
-    let modalidade = $page.params.slug;
+    //let modalidade = $page.params.slug;
 
-    let data = $modalidades.find(element => element.slug === modalidade)
+    //let data = $modalidades.find(element => element.slug === modalidade)
+    export let data;
 </script>
 
 <IntroSingle data={data} 
