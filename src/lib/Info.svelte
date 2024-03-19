@@ -13,7 +13,7 @@
         active = !active
     }
 
-    $: console.log(active)
+    //$: console.log(active)
 </script>
 
 <div class="info" role="button" on:click={handleActive} on:keydown={handleActive} tabindex="0" use:autoAnimate>

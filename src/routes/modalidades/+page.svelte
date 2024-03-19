@@ -2,8 +2,6 @@
 	import Card from "$lib/Card.svelte";
 	import Intro from "$lib/Intro.svelte";
     import { modalidades } from '$lib/stores'
-
-    console.log($modalidades)
 </script>
 
 <Intro 
@@ -16,7 +14,7 @@
 
 <section class="modalidades">
     <div class="modalidades__wrapper wrap">
-
+        
         {#each $modalidades as modalidade}
             <Card 
                 info={modalidade}
