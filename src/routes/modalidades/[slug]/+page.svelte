@@ -13,9 +13,9 @@
     export let data;
 </script>
 
-<IntroSingle data={data} 
-
-/>
+{#key data}
+<IntroSingle data={data} />
+{/key}
 
 <section class="related">
     <div class="related__wrapper wrap">
